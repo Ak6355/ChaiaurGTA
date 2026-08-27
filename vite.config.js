@@ -1,14 +1,17 @@
 import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  // Base path (change if deploying to a subfolder)
-  base: './',
-  
+  plugins: [react()],
+
+  // GitHub Pages repository name
+  base: '/ChaiaurGTA/',
+
   // Development server
   server: {
     port: 3000,
-    open: true,          // auto-open browser
-    host: true           // allow network access (phone testing)
+    open: true, // auto-open browser
+    host: true, // allow network access
   },
 
   // Build output
@@ -18,19 +21,20 @@ export default defineConfig({
     sourcemap: false,
     minify: 'esbuild',
     cssMinify: true,
+
     rollupOptions: {
       output: {
         // Clean asset names
         assetFileNames: 'assets/[name]-[hash][extname]',
         chunkFileNames: 'assets/[name]-[hash].js',
-        entryFileNames: 'assets/[name]-[hash].js'
-      }
-    }
+        entryFileNames: 'assets/[name]-[hash].js',
+      },
+    },
   },
 
-  // Preview server (after build)
+  // Preview server
   preview: {
     port: 4173,
-    open: true
-  }
+    open: true,
+  },
 })
