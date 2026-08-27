@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <meta name="description" content="CHAI AUR GTA — Premium GTA streaming, live gameplay, heists & chaos on YouTube. Join the crew." />
+  <meta name="theme-color" content="#0a0a0f" />
+  <meta property="og:title" content="CHAI AUR GTA | Official Website" />
+  <meta property="og:description" content="Streaming the streets of Los Santos & Leonida. Live GTA chaos daily." />
+  <meta property="og:type" content="website" />
+  <title>CHAI AUR GTA | Official Gaming Company</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet" />
+
+  <!-- GSAP + Plugins (CDN is fine with Vite) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+  <script type="module" crossorigin src="/ChaiaurGTA/assets/index-CBt1EGIW.js"></script>
+  <link rel="stylesheet" crossorigin href="/ChaiaurGTA/assets/index-CsWbc-nV.css">
+</head>
+<body>
+  <!-- Three.js Background Canvas -->
+  <div id="three-bg"></div>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="loader-content">
+      <div class="loader-logo">CHAI AUR GTA</div>
+      <div class="loader-bar"><div class="loader-progress"></div></div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="site-header" id="header">
+    <div class="container nav-inner">
+      <a href="#hero" class="logo">
+        <span class="logo-main">CHAI AUR</span>
+        <span class="logo-accent">GTA</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#streams">Streams</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#socials">Connect</a>
+        <a href="#contact" class="btn-nav">Contact</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="hero-bg">
+      <div class="hero-gradient"></div>
+      <div class="hero-particles" id="particles"></div>
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal">Official Company Website</p>
+      <h1 class="hero-title">
+        <span class="line">CHAI AUR</span>
+        <span class="line accent">GTA</span>
+      </h1>
+      <p class="hero-tagline reveal">Streaming the chaos on <strong>PS5</strong>. Living the streets.<br />GTA gameplay, heists & live energy every day.</p>
+      <div class="hero-ctas reveal">
+        <a href="https://www.youtube.com/" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.5 31.5 0 0 0 0 12a31.5 31.5 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.5 31.5 0 0 0 24 12a31.5 31.5 0 0 0-.5-5.8zM9.8 15.5V8.5l6.3 3.5-6.3 3.5z"/></svg>
+          Watch on YouTube
+        </a>
+        <a href="#streams" class="btn btn-ghost">Latest Streams</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Who We Are</span>
+        <h2 class="section-title">Built for the Streets</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="lead">CHAI AUR GTA is more than a channel — it’s a high-octane gaming company dedicated to pure GTA energy.</p>
+          <p>From intense heists and roleplay chaos to chill night drives through neon cities, we bring the full Los Santos / Leonida experience live to your screen. Every stream is crafted for immersion, laughs, and that perfect mix of skill and pure mayhem.</p>
+          <ul class="about-features">
+            <li><span class="icon">▶</span> Daily / Weekly Live Streams</li>
+            <li><span class="icon">▶</span> GTA Online & Story Mode Content</li>
+            <li><span class="icon">▶</span> Community Heists & Challenges</li>
+            <li><span class="icon">▶</span> Cinematic Highlights & Shorts</li>
+          </ul>
+        </div>
+        <div class="about-visual">
+          <div class="about-card">
+            <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=900&q=85" alt="Gaming setup night" loading="lazy" />
+            <div class="card-glow"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STREAMS / LATEST -->
+  <section id="streams" class="section streams">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Content</span>
+        <h2 class="section-title">Latest Streams & Videos</h2>
+        <p class="section-desc">Jump into the action. New uploads and live sessions regularly.</p>
+      </div>
+      <div class="streams-grid">
+        <article class="stream-card featured">
+          <div class="stream-thumb">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1000&q=85" alt="Night city drive" loading="lazy" />
+            <div class="play-overlay">
+              <div class="play-btn">▶</div>
+            </div>
+            <span class="live-badge">LIVE SOON</span>
+          </div>
+          <div class="stream-info">
+            <h3>Night City Heist Run</h3>
+            <p>Full crew takedown • Cinematic highlights</p>
+          </div>
+        </article>
+        <article class="stream-card">
+          <div class="stream-thumb">
+            <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=700&q=85" alt="Gaming controller" loading="lazy" />
+            <div class="play-overlay"><div class="play-btn">▶</div></div>
+          </div>
+          <div class="stream-info">
+            <h3>Roleplay Chaos Vol. 12</h3>
+            <p>Unscripted streets energy</p>
+          </div>
+        </article>
+        <article class="stream-card">
+          <div class="stream-thumb">
+            <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=700&q=85" alt="Neon lights" loading="lazy" />
+            <div class="play-overlay"><div class="play-btn">▶</div></div>
+          </div>
+          <div class="stream-info">
+            <h3>Vice City Vibes</h3>
+            <p>Chill drives & soundtrack</p>
+          </div>
+        </article>
+        <article class="stream-card">
+          <div class="stream-thumb">
+            <img src="https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=700&q=85" alt="Controller closeup" loading="lazy" />
+            <div class="play-overlay"><div class="play-btn">▶</div></div>
+          </div>
+          <div class="stream-info">
+            <h3>Biggest Score Yet</h3>
+            <p>Heist highlights reel</p>
+          </div>
+        </article>
+      </div>
+      <div class="center-cta">
+        <a href="https://www.youtube.com/" target="_blank" rel="noopener" class="btn btn-primary">View Full Channel</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="section gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Visuals</span>
+        <h2 class="section-title">Captured Chaos</h2>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item tall">
+          <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=85" alt="Neon city" loading="lazy" />
+          <div class="gallery-caption">Neon Nights</div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=800&q=85" alt="Sports car" loading="lazy" />
+          <div class="gallery-caption">Street Kings</div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=700&q=80" alt="Car lights" loading="lazy" />
+          <div class="gallery-caption">Light Trails</div>
+        </div>
+        <div class="gallery-item wide">
+          <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1200&q=85" alt="Concert lights" loading="lazy" />
+          <div class="gallery-caption">City Pulse</div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=800&q=85" alt="Retro gaming" loading="lazy" />
+          <div class="gallery-caption">Arcade Energy</div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?auto=format&fit=crop&w=800&q=85" alt="Setup" loading="lazy" />
+          <div class="gallery-caption">Stream HQ</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOCIALS -->
+  <section id="socials" class="section socials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Stay Connected</span>
+        <h2 class="section-title">Join the Crew</h2>
+        <p class="section-desc">Follow across every platform for streams, clips & behind-the-scenes.</p>
+      </div>
+      <div class="social-grid">
+        <a href="https://www.youtube.com/" target="_blank" rel="noopener" class="social-card youtube">
+          <div class="social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.5 31.5 0 0 0 0 12a31.5 31.5 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.5 31.5 0 0 0 24 12a31.5 31.5 0 0 0-.5-5.8zM9.8 15.5V8.5l6.3 3.5-6.3 3.5z"/></svg>
+          </div>
+          <h3>YouTube</h3>
+          <p>Main channel • Live streams & VODs</p>
+          <span class="social-link">Subscribe →</span>
+        </a>
+        <a href="https://x.com/" target="_blank" rel="noopener" class="social-card x">
+          <div class="social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.286-6.917L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </div>
+          <h3>X (Twitter)</h3>
+          <p>Real-time updates & clips</p>
+          <span class="social-link">Follow →</span>
+        </a>
+        <a href="https://facebook.com/" target="_blank" rel="noopener" class="social-card facebook">
+          <div class="social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </div>
+          <h3>Facebook</h3>
+          <p>Community & announcements</p>
+          <span class="social-link">Like →</span>
+        </a>
+        <a href="#" class="social-card discord">
+          <div class="social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+          </div>
+          <h3>Discord</h3>
+          <p>Crew chat & events</p>
+          <span class="social-link">Join →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Get in Touch</span>
+        <h2 class="section-title">Contact the Team</h2>
+        <p class="section-desc">Business inquiries, collabs, sponsorships or just say hi.</p>
+      </div>
+      <div class="contact-wrapper">
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required placeholder="Your name" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="you@email.com" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Collab / Business / Other" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Tell us everything..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary full-width">Send Message</button>
+        </form>
+        <div class="contact-info">
+          <div class="info-block">
+            <h4>Email</h4>
+            <a href="mailto:hello@chaiaurgta.com">hello@chaiaurgta.com</a>
+          </div>
+          <div class="info-block">
+            <h4>Business</h4>
+            <a href="mailto:biz@chaiaurgta.com">biz@chaiaurgta.com</a>
+          </div>
+          <div class="info-block">
+            <h4>Response Time</h4>
+            <p>Usually within 24–48 hours</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="logo">
+            <span class="logo-main">CHAI AUR</span>
+            <span class="logo-accent">GTA</span>
+          </div>
+          <p>Premium GTA streaming company.<br />Chaos delivered daily.</p>
+        </div>
+        <div class="footer-links">
+          <div>
+            <h5>Explore</h5>
+            <a href="#about">About</a>
+            <a href="#streams">Streams</a>
+            <a href="#gallery">Gallery</a>
+          </div>
+          <div>
+            <h5>Connect</h5>
+            <a href="https://www.youtube.com/" target="_blank">YouTube</a>
+            <a href="https://x.com/" target="_blank">X</a>
+            <a href="https://facebook.com/" target="_blank">Facebook</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 CHAI AUR GTA. All rights reserved. Not affiliated with Rockstar Games.</p>
+        <p class="made">Built for the next generation of gamers.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Vite entry point -->
+</body>
+</html>
